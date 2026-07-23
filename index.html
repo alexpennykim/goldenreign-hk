@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金璽鐘錶 GOLDEN REIGN — 高端奢侈品腕錶買賣</title>
+    <meta name="description" content="金璽鐘錶有限公司 — 專注高端奢侈品腕錶買賣、鑑定與寄售。匯聚 Rolex、Patek Philippe、Audemars Piguet 等頂級品牌，為收藏家提供專業、誠信、尊貴的腕錶交易服務。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Noto+Serif+TC:wght@300;400;500;600;700;900&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ========== Navigation ========== -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-zh">金璽鐘錶</span>
+                <span class="logo-en">GOLDEN REIGN</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="菜單">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about">關於我們</a></li>
+                <li><a href="#services">服務體系</a></li>
+                <li><a href="#brands">業務品牌</a></li>
+                <li><a href="#collection">品牌臻賞</a></li>
+                <li><a href="#why">為何選擇我們</a></li>
+                <li><a href="#contact" class="nav-cta">聯絡我們</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========== Hero ========== -->
+    <section id="hero">
+        <!-- Layered background images -->
+        <div class="hero-bg-layer" id="heroBgLayer"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-vignette"></div>
+
+        <!-- Floating gold particles -->
+        <div class="hero-particles" id="heroParticles"></div>
+
+        <!-- Hero content -->
+        <div class="hero-content" id="heroContent">
+            <!-- Top ornamental divider -->
+            <div class="hero-ornament fade-up" style="--delay: 0.2s">
+                <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="10" x2="75" y2="10" stroke="#c5a572" stroke-width="0.5" opacity="0.5"/>
+                    <circle cx="85" cy="10" r="1.5" fill="#c5a572" opacity="0.6"/>
+                    <path d="M90 10 Q95 4, 100 10 Q105 16, 110 10" fill="none" stroke="#c5a572" stroke-width="0.8" opacity="0.7"/>
+                    <circle cx="115" cy="10" r="1.5" fill="#c5a572" opacity="0.6"/>
+                    <line x1="125" y1="10" x2="200" y2="10" stroke="#c5a572" stroke-width="0.5" opacity="0.5"/>
+                </svg>
+            </div>
+
+            <p class="hero-eyebrow fade-up" style="--delay: 0.3s">HONG KONG · TSIM SHA TSUI</p>
+
+            <h1 class="hero-title fade-up" style="--delay: 0.5s">
+                <span class="hero-title-zh">時間的藝術</span>
+                <span class="hero-title-sub">The Art of Timekeeping</span>
+            </h1>
+
+            <p class="hero-tagline fade-up" style="--delay: 0.7s">
+                <span class="tagline-line"></span>
+                臻品傳承 · 為鑑賞家締造尊貴腕錶收藏體驗
+                <span class="tagline-line"></span>
+            </p>
+
+            <p class="hero-desc fade-up" style="--delay: 0.9s">
+                專注頂級奢侈品腕錶買賣、鑑定與寄售<br>
+                匯聚勞力士、百達翡麗、愛彼等全球頂級製錶品牌
+            </p>
+
+            <div class="hero-actions fade-up" style="--delay: 1.1s">
+                <a href="#collection" class="btn btn-gold">探索品牌</a>
+                <a href="#contact" class="btn btn-outline">預約鑑定</a>
+            </div>
+
+            <!-- Luxury feature highlights -->
+            <div class="hero-features fade-up" style="--delay: 1.3s">
+                <div class="hero-feature">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                        <path d="M12 2L3 7v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7l-9-5z"/>
+                        <path d="M9 12l2 2 4-4"/>
+                    </svg>
+                    <span>瑞士認證鑑定</span>
+                </div>
+                <div class="hero-feature-divider"></div>
+                <div class="hero-feature">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/>
+                    </svg>
+                    <span>全球安保配送</span>
+                </div>
+                <div class="hero-feature-divider"></div>
+                <div class="hero-feature">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M12 1v6M12 17v6M4.2 4.2l4.3 4.3M15.5 15.5l4.3 4.3M1 12h6M17 12h6M4.2 19.8l4.3-4.3M15.5 8.5l4.3-4.3"/>
+                    </svg>
+                    <span>終身售後服務</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Refined scroll indicator -->
+        <div class="hero-scroll fade-up" style="--delay: 1.5s">
+            <span>SCROLL TO EXPLORE</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ========== About ========== -->
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p class="section-eyebrow">ABOUT US</p>
+                    <h2 class="section-title">以專業與誠信<br>守護每一段腕錶傳奇</h2>
+                    <p class="about-lead">
+                        金璽鐘錶有限公司總部設於香港九龍尖沙咀，是亞太區知名的高端腕錶交易機構。我們深耕奢侈品腕錶領域，與全球頂級品牌及資深收藏家建立了深厚的信任網絡。
+                    </p>
+                    <p class="about-body">
+                        從日內瓦到東京，從紐約到上海，我們的專業團隊足跡遍佈全球重要拍賣會與私人收藏圈層。每一枚經手的腕錶，均由瑞士認證鐘錶師嚴格鑑定，確保真品傳承、品相完美。我們不只是腕錶的經紀人，更是時間藝術的守護者。
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-num" data-target="15000">0</span>
+                            <span class="stat-label">枚腕錶交易</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num" data-target="6">0</span>
+                            <span class="stat-label">年行業深耕</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num" data-target="20">0</span>
+                            <span class="stat-label">頂級品牌覆蓋</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num" data-target="5000">0</span>
+                            <span class="stat-label">位尊享客戶</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual reveal" style="--delay: 0.2s">
+                    <div class="about-img-frame">
+                        <div class="about-img-inner">
+                            <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" class="watch-svg">
+                                <defs>
+                                    <radialGradient id="dialGrad" cx="50%" cy="45%" r="55%">
+                                        <stop offset="0%" stop-color="#1a1a2e"/>
+                                        <stop offset="60%" stop-color="#0d0d1a"/>
+                                        <stop offset="100%" stop-color="#000"/>
+                                    </radialGradient>
+                                    <linearGradient id="bezelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#e8c87a"/>
+                                        <stop offset="30%" stop-color="#c5a572"/>
+                                        <stop offset="60%" stop-color="#d4af37"/>
+                                        <stop offset="100%" stop-color="#9a7d3a"/>
+                                    </linearGradient>
+                                    <linearGradient id="caseGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#d4af37"/>
+                                        <stop offset="50%" stop-color="#c5a572"/>
+                                        <stop offset="100%" stop-color="#9a7d3a"/>
+                                    </linearGradient>
+                                    <filter id="shadow">
+                                        <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+                                        <feOffset dx="0" dy="6"/>
+                                        <feComponentTransfer><feFuncA type="linear" slope="0.4"/></feComponentTransfer>
+                                        <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+                                    </filter>
+                                </defs>
+                                <!-- Shadow -->
+                                <ellipse cx="200" cy="470" rx="120" ry="12" fill="rgba(0,0,0,0.3)" filter="url(#shadow)"/>
+                                <!-- Crown -->
+                                <rect x="335" y="220" width="22" height="30" rx="4" fill="url(#caseGrad)"/>
+                                <rect x="340" y="213" width="14" height="6" rx="2" fill="url(#caseGrad)"/>
+                                <!-- Lugs -->
+                                <path d="M135,120 Q130,110 145,105 L175,105 L175,140 L145,140 Z" fill="url(#caseGrad)"/>
+                                <path d="M265,120 Q270,110 255,105 L225,105 L225,140 L255,140 Z" fill="url(#caseGrad)"/>
+                                <path d="M135,360 Q130,370 145,375 L175,375 L175,340 L145,340 Z" fill="url(#caseGrad)"/>
+                                <path d="M265,360 Q270,370 255,375 L225,375 L225,340 L255,340 Z" fill="url(#caseGrad)"/>
+                                <!-- Outer bezel -->
+                                <circle cx="200" cy="240" r="155" fill="url(#bezelGrad)"/>
+                                <circle cx="200" cy="240" r="148" fill="none" stroke="#6b5223" stroke-width="1" opacity="0.5"/>
+                                <!-- Inner bezel ring -->
+                                <circle cx="200" cy="240" r="142" fill="url(#caseGrad)"/>
+                                <!-- Dial -->
+                                <circle cx="200" cy="240" r="135" fill="url(#dialGrad)"/>
+                                <!-- Dial texture circles -->
+                                <circle cx="200" cy="240" r="120" fill="none" stroke="#c5a572" stroke-width="0.5" opacity="0.15"/>
+                                <circle cx="200" cy="240" r="100" fill="none" stroke="#c5a572" stroke-width="0.5" opacity="0.1"/>
+                                <!-- Hour markers -->
+                                <g class="hour-markers">
+                                    <line x1="200" y1="120" x2="200" y2="135" stroke="#e8c87a" stroke-width="3" stroke-linecap="round"/>
+                                    <line x1="280" y1="160" x2="270" y2="170" stroke="#e8c87a" stroke-width="2.5" stroke-linecap="round"/>
+                                    <line x1="320" y1="240" x2="305" y2="240" stroke="#e8c87a" stroke-width="3" stroke-linecap="round"/>
+                                    <line x1="280" y1="320" x2="270" y2="310" stroke="#e8c87a" stroke-width="2.5" stroke-linecap="round"/>
+                                    <line x1="200" y1="360" x2="200" y2="345" stroke="#e8c87a" stroke-width="3" stroke-linecap="round"/>
+                                    <line x1="120" y1="320" x2="130" y2="310" stroke="#e8c87a" stroke-width="2.5" stroke-linecap="round"/>
+                                    <line x1="80" y1="240" x2="95" y2="240" stroke="#e8c87a" stroke-width="3" stroke-linecap="round"/>
+                                    <line x1="120" y1="160" x2="130" y2="170" stroke="#e8c87a" stroke-width="2.5" stroke-linecap="round"/>
+                                </g>
+                                <!-- 12 marker -->
+                                <text x="200" y="145" text-anchor="middle" fill="#e8c87a" font-size="14" font-family="Cormorant Garamond" font-weight="600">XII</text>
+                                <!-- 3 marker -->
+                                <text x="290" y="246" text-anchor="middle" fill="#e8c87a" font-size="12" font-family="Cormorant Garamond" font-weight="500">III</text>
+                                <!-- 6 marker -->
+                                <text x="200" y="345" text-anchor="middle" fill="#e8c87a" font-size="12" font-family="Cormorant Garamond" font-weight="500">VI</text>
+                                <!-- 9 marker -->
+                                <text x="110" y="246" text-anchor="middle" fill="#e8c87a" font-size="12" font-family="Cormorant Garamond" font-weight="500">IX</text>
+                                <!-- Brand text on dial -->
+                                <text x="200" y="200" text-anchor="middle" fill="#c5a572" font-size="11" font-family="Cormorant Garamond" letter-spacing="3" opacity="0.7">GOLDEN REIGN</text>
+                                <text x="200" y="215" text-anchor="middle" fill="#c5a572" font-size="7" font-family="Montserrat" letter-spacing="2" opacity="0.5">GENEVE</text>
+                                <!-- Sub-dial -->
+                                <circle cx="200" cy="285" r="28" fill="none" stroke="#c5a572" stroke-width="1" opacity="0.3"/>
+                                <circle cx="200" cy="285" r="25" fill="#050510" opacity="0.6"/>
+                                <line x1="200" y1="285" x2="200" y2="268" stroke="#e8c87a" stroke-width="1.5" stroke-linecap="round"/>
+                                <line x1="200" y1="285" x2="212" y2="285" stroke="#e8c87a" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+                                <!-- Hands -->
+                                <line x1="200" y1="240" x2="200" y2="175" stroke="#f0e0b0" stroke-width="3.5" stroke-linecap="round"/>
+                                <line x1="200" y1="240" x2="252" y2="240" stroke="#f0e0b0" stroke-width="2.5" stroke-linecap="round"/>
+                                <line x1="200" y1="240" x2="200" y2="300" stroke="#d4af37" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+                                <!-- Center cap -->
+                                <circle cx="200" cy="240" r="5" fill="#e8c87a"/>
+                                <circle cx="200" cy="240" r="2.5" fill="#1a1a2e"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Services ========== -->
+    <section id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-eyebrow">OUR SERVICES</p>
+                <h2 class="section-title">全方位腕錶服務體系</h2>
+                <p class="section-subtitle">從買入到售出，從鑑定到保養，為您的腕錶收藏提供一站式尊享服務</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal" style="--delay: 0s">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="32" cy="32" r="22"/>
+                            <circle cx="32" cy="32" r="16" stroke-dasharray="3 2"/>
+                            <path d="M32 20v12l8 6"/>
+                            <path d="M28 8h8M28 56h8"/>
+                            <circle cx="32" cy="32" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>腕錶收購</h3>
+                    <p>以市場最優價格收購您的珍藏腕錶。我們的專業評估團隊將根據品牌、型號、年份及品相，提供公正透明的即時報價，當日結算，資金安全到帳。</p>
+                    <ul class="service-features">
+                        <li>免費上門評估</li>
+                        <li>即日完成交易</li>
+                        <li>報價高於同行</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal" style="--delay: 0.15s">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="16" y="14" width="32" height="36" rx="4"/>
+                            <circle cx="32" cy="28" r="8"/>
+                            <path d="M32 28l3-3"/>
+                            <line x1="24" y1="44" x2="40" y2="44"/>
+                            <path d="M22 14v-4M42 14v-4"/>
+                        </svg>
+                    </div>
+                    <h3>腕錶寄售</h3>
+                    <p>委託我們代為銷售您的腕錶珍品。依託全球客戶網絡與專業營銷團隊，以最短週期實現最高溢價，讓每一枚腕錶找到最懂得欣賞它的人。</p>
+                    <ul class="service-features">
+                        <li>全球客戶網絡</li>
+                        <li>專業攝影展示</li>
+                        <li>最優溢價回報</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal" style="--delay: 0.3s">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M32 8l20 8v18c0 12-8 20-20 26-12-6-20-14-20-26V16l20-8z"/>
+                            <path d="M24 32l6 6 12-12"/>
+                        </svg>
+                    </div>
+                    <h3>專業鑑定</h3>
+                    <p>由瑞士WOSTEP認證鐘錶師親自操刀，結合原廠數據比對與精密儀器檢測，為每一枚腕錶出具權威鑑定報告，確保真品傳承、價值如實。</p>
+                    <ul class="service-features">
+                        <li>WOSTEP認證技師</li>
+                        <li>原廠數據比對</li>
+                        <li>出具鑑定證書</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal" style="--delay: 0.45s">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 32c0-11 9-20 20-20s20 9 20 20"/>
+                            <path d="M48 40v8a4 4 0 01-4 4H20a4 4 0 01-4-4v-8"/>
+                            <path d="M32 12v6"/>
+                            <circle cx="32" cy="32" r="3"/>
+                            <path d="M32 35v8"/>
+                        </svg>
+                    </div>
+                    <h3>維修保養</h3>
+                    <p>提供原廠級別的維修與保養服務。從機芯清洗、零件更換到外觀翻新，均由資深技師精細操作，讓您的腕錶歷久彌新，精準如初。</p>
+                    <ul class="service-features">
+                        <li>原廠零件供應</li>
+                        <li>資深技師操刀</li>
+                        <li>兩年質保承諾</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal" style="--delay: 0.6s">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 20h36l-4 34a4 4 0 01-4 4H22a4 4 0 01-4-4L14 20z"/>
+                            <path d="M22 20v-6a10 10 0 0120 0v6"/>
+                            <path d="M26 32l4 4 8-8"/>
+                        </svg>
+                    </div>
+                    <h3>腕錶銷售</h3>
+                    <p>精選全球頂級品牌腕錶現貨供應，涵蓋熱門款、限量款及稀有收藏款。每一枚均經嚴格鑑定，全套配件齊備，即買即享，為您開啟尊貴收藏之旅。</p>
+                    <ul class="service-features">
+                        <li>現貨即買即交付</li>
+                        <li>全新/二手多選擇</li>
+                        <li>全套包裝配件齊備</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Brands ========== -->
+    <section id="brands">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-eyebrow">LUXURY BRANDS</p>
+                <h2 class="section-title">公司業務涵蓋的頂級品牌</h2>
+                <p class="section-subtitle">我們的業務涵蓋全球20餘個頂級腕錶品牌，橫跨瑞士製錶殿堂級名匠至新銳獨立製錶師</p>
+            </div>
+            <div class="brands-grid reveal" style="--delay: 0.2s">
+                <div class="brand-item">
+                    <span class="brand-name">ROLEX</span>
+                    <span class="brand-cn">勞力士</span>
+                </div>
+                <div class="brand-item">
+                    <span class="brand-name">PATEK PHILIPPE</span>
+                    <span class="brand-cn">百達翡麗</span>
+                </div>
+                <div class="brand-item">
+                    <span class="brand-name">AUDEMARS PIGUET</span>
+                    <span class="brand-cn">愛彼</span>
+                </div>
+                <div class="brand-item">
+                    <span class="brand-name">VACHERON CONSTANTIN</span>
+                    <span class="brand-cn">江詩丹頓</span>
+                </div>
+                <div class="brand-item">
+                    <span class="brand-name">A. LANGE & SÖHNE</span>
+                    <span class="brand-cn">朗格</span>
+                </div>
+                <div class="brand-item">
+                    <span class="brand-name">BREGUET</span>
+                    <span class="brand-cn">寶璣</span>
+                </div>
+                <div class="brand-item">
+                    <span class="brand-name">JAEGER-LECOULTRE</span>
+                    <span class="brand-cn">積家</span>
+                </div>
+                <div class="brand-item">
+                    <span class="brand-name">OMEGA</span>
+                    <span class="brand-cn">歐米茄</span>
+                </div>
+                <div class="brand-item">
+                    <span class="brand-name">HUBLOT</span>
+                    <span class="brand-cn">宇舶</span>
+                </div>
+                <div class="brand-item">
+                    <span class="brand-name">PANERAI</span>
+                    <span class="brand-cn">沛納海</span>
+                </div>
+                <div class="brand-item">
+                    <span class="brand-name">IWC</span>
+                    <span class="brand-cn">萬國</span>
+                </div>
+                <div class="brand-item">
+                    <span class="brand-name">CARTIER</span>
+                    <span class="brand-cn">卡地亞</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Collection ========== -->
+    <section id="collection">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-eyebrow">TIMELESS CRAFTSMANSHIP</p>
+                <h2 class="section-title">頂級腕錶品牌臻賞</h2>
+                <p class="section-subtitle">金璽鐘錶匯聚勞力士、百達翡麗、愛彼、江詩丹頓、朗格等全球頂級製錶品牌。從經典運動款到複雜功能腕錶，每一枚皆承載百年工藝傳承，為鑑賞家締造非凡腕間體驗。</p>
+            </div>
+        </div>
+        <div class="carousel-wrapper reveal" style="--delay: 0.2s">
+            <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="上一張">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <div class="carousel-track" id="carouselTrack">
+                <div class="carousel-slide">
+                    <div class="slide-img slide-bg-1"></div>
+                    <div class="slide-overlay">
+                        <span class="slide-brand">ROLEX</span>
+                        <span class="slide-name">勞力士 · 永恆的卓越</span>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="slide-img slide-bg-2"></div>
+                    <div class="slide-overlay">
+                        <span class="slide-brand">PATEK PHILIPPE</span>
+                        <span class="slide-name">百達翡麗 · 傳承的藝術</span>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="slide-img slide-bg-3"></div>
+                    <div class="slide-overlay">
+                        <span class="slide-brand">AUDEMARS PIGUET</span>
+                        <span class="slide-name">愛彼 · 破格的先鋒</span>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="slide-img slide-bg-4"></div>
+                    <div class="slide-overlay">
+                        <span class="slide-brand">VACHERON CONSTANTIN</span>
+                        <span class="slide-name">江詩丹頓 · 優雅的精髓</span>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="slide-img slide-bg-5"></div>
+                    <div class="slide-overlay">
+                        <span class="slide-brand">A. LANGE & SÖHNE</span>
+                        <span class="slide-name">朗格 · 精密的極致</span>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="slide-img slide-bg-6"></div>
+                    <div class="slide-overlay">
+                        <span class="slide-brand">RICHARD MILLE</span>
+                        <span class="slide-name">瑞奇·米勒 · 未來的宣言</span>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn carousel-next" id="carouselNext" aria-label="下一張">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+        </div>
+        <div class="carousel-dots" id="carouselDots"></div>
+    </section>
+
+    <!-- ========== Why Choose Us ========== -->
+    <section id="why">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-eyebrow">WHY CHOOSE US</p>
+                <h2 class="section-title">為何選擇金璽鐘錶</h2>
+                <p class="section-subtitle">六年深耕，以專業與誠信贏得五千餘位收藏家的信賴</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-item reveal" style="--delay: 0s">
+                    <div class="why-number">01</div>
+                    <h3>百分百正品保證</h3>
+                    <p>每一枚腕錶均經瑞士WOSTEP認證技師多重鑑定，承諾百分百正品。如鑑定為贗品，全額退款並賠償。</p>
+                </div>
+                <div class="why-item reveal" style="--delay: 0.1s">
+                    <div class="why-number">02</div>
+                    <h3>全球價格透明</h3>
+                    <p>實時對標日內瓦、香港、東京三大拍賣市場行情，確保每一筆交易價格公正透明，絕不暗箱操作。</p>
+                </div>
+                <div class="why-item reveal" style="--delay: 0.2s">
+                    <div class="why-number">03</div>
+                    <h3>隱私安全承諾</h3>
+                    <p>嚴格保護客戶隱私，所有交易資料加密存儲。提供私人VIP鑑賞室，確保交易過程安全私密。</p>
+                </div>
+                <div class="why-item reveal" style="--delay: 0.3s">
+                    <div class="why-number">04</div>
+                    <h3>全球配送網絡</h3>
+                    <p>與Brink's及Malca-Amit合作，提供全球武裝押運安保配送服務，腕錶全程保險，安全送達。</p>
+                </div>
+                <div class="why-item reveal" style="--delay: 0.4s">
+                    <div class="why-number">05</div>
+                    <h3>售後終身服務</h3>
+                    <p>售出腕錶享有終身免費機芯檢測服務，每五年提供一次原廠級保養，確保腕錶永續精準。</p>
+                </div>
+                <div class="why-item reveal" style="--delay: 0.5s">
+                    <div class="why-number">06</div>
+                    <h3>資深專業團隊</h3>
+                    <p>團隊由前蘇富比、佳士得鐘錶部資深專家組成，平均行業經驗超過20年，為您的收藏保駕護航。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Contact ========== -->
+    <section id="contact">
+        <div class="contact-wrapper">
+            <div class="contact-info reveal">
+                <p class="section-eyebrow">CONTACT US</p>
+                <h2 class="section-title">預約鑑定 / 咨詢交易</h2>
+                <p class="contact-lead">無論您是腕錶收藏的資深鑑賞家，還是初入門徑的愛好者，我們的專業顧問團隊隨時為您提供一對一尊享服務。</p>
+                <div class="contact-details">
+                    <div class="contact-detail-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/>
+                                <circle cx="12" cy="9" r="2.5"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="contact-label">旗艦店地址</span>
+                            <span class="contact-value">香港九龍尖沙咀棉登徑8號<br>凱譽32E</span>
+                        </div>
+                    </div>
+                    <div class="contact-detail-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 6l9 7 9-7"/>
+                                <rect x="3" y="5" width="18" height="14" rx="2"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="contact-label">電子郵箱</span>
+                            <span class="contact-value">JINPEIYU@GOLDENREIGNTRADE.COM</span>
+                        </div>
+                    </div>
+                    <div class="contact-detail-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.37 1.9.72 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0122 16.92z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="contact-label">尊享熱線</span>
+                            <span class="contact-value">香港：+852 8402 7613<br>內地：+86 138 0130 2738</span>
+                        </div>
+                    </div>
+                    <div class="contact-detail-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="contact-label">營業時間</span>
+                            <span class="contact-value">週一至週六 10:00 - 19:00<br>週日及公眾假期敬請預約</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-wrap reveal" style="--delay: 0.2s">
+                <form class="contact-form" id="contactForm">
+                    <h3 class="form-title">填寫您的需求</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">姓名 *</label>
+                            <input type="text" id="name" name="name" required placeholder="您的姓名">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">聯絡電話 *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+852 / +86 號碼">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">電子郵箱</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">意向服務</label>
+                        <select id="service" name="service">
+                            <option value="">請選擇</option>
+                            <option value="sell">腕錶銷售</option>
+                            <option value="buy">腕錶收購</option>
+                            <option value="consign">腕錶寄售</option>
+                            <option value="appraise">專業鑑定</option>
+                            <option value="maintain">維修保養</option>
+                            <option value="consult">一般咨詢</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">詳細需求</label>
+                        <textarea id="message" name="message" rows="4" placeholder="請描述您的腕錶品牌、型號或具體需求..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-gold btn-full">提交咨詢</button>
+                    <p class="form-note">提交即表示您同意我們的隱私政策，我們將在24小時內與您聯繫。</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Footer ========== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <span class="logo-zh">金璽鐘錶</span>
+                    <span class="logo-en">GOLDEN REIGN</span>
+                    <p class="footer-desc">專注高端奢侈品腕錶買賣、鑑定與寄售，為全球收藏家締造尊貴腕錶收藏體驗。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>服務體系</h4>
+                    <ul>
+                        <li><a href="#services">腕錶銷售</a></li>
+                        <li><a href="#services">腕錶收購</a></li>
+                        <li><a href="#services">腕錶寄售</a></li>
+                        <li><a href="#services">專業鑑定</a></li>
+                        <li><a href="#services">維修保養</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>快速導航</h4>
+                    <ul>
+                        <li><a href="#about">關於我們</a></li>
+                        <li><a href="#brands">業務品牌</a></li>
+                        <li><a href="#collection">品牌臻賞</a></li>
+                        <li><a href="#contact">聯絡我們</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>關注我們</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="WeChat">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 01.213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.328.328 0 00.168-.054l1.756-1.03a.593.593 0 01.5-.038 10.04 10.04 0 002.37.282c.346 0 .688-.018 1.026-.052-.292-.835-.45-1.722-.45-2.643 0-4.34 4.027-7.86 8.993-7.86.053 0 .105.003.158.004C16.632 3.828 13.026 2.188 8.691 2.188zm-3.13 4.438a1.05 1.05 0 110 2.1 1.05 1.05 0 010-2.1zm5.706 0a1.05 1.05 0 110 2.1 1.05 1.05 0 010-2.1z"/>
+                                <path d="M23.997 14.45c0-3.343-3.244-6.054-7.246-6.054S9.5 11.107 9.5 14.45s3.247 6.054 7.25 6.054c.734 0 1.44-.092 2.106-.264a.476.476 0 01.4.03l1.405.823a.262.262 0 00.134.043.237.237 0 00.232-.236c0-.058-.023-.114-.038-.17l-.312-1.184a.473.473 0 01.17-.532c1.465-1.075 2.055-2.456 2.055-4.275zm-9.548-1.023a.844.844 0 110-1.688.844.844 0 010 1.688zm4.604 0a.844.844 0 110-1.688.844.844 0 010 1.688z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20">
+                                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                <circle cx="12" cy="12" r="5"/>
+                                <circle cx="18" cy="6" r="1" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/85284027613" class="social-link" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.149-.197.297-.767.967-.94 1.165-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="footer-desc">掃碼關注微信公眾號<br>獲取最新臻品資訊</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 金璽鐘錶 GOLDEN REIGN INTERNATIONAL TRADE CO., LTD. All Rights Reserved.</p>
+                <p>金璽鐘錶有限公司 GOLDEN REIGN INTERNATIONAL TRADE CO., LTD | 香港九龍尖沙咀棉登徑8號凱譽32E</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
