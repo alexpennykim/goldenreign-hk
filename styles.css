@@ -618,11 +618,6 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.stat-num::after {
-    content: '+';
-    font-size: 1.5rem;
-}
-
 .stat-label {
     font-family: var(--font-cn);
     font-size: 0.75rem;
