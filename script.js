@@ -399,4 +399,25 @@
         });
     });
 
+    /* ===== Background Music Toggle ===== */
+    var bgMusic = document.getElementById('bgMusic');
+    var musicToggle = document.getElementById('musicToggle');
+
+    if (bgMusic && musicToggle) {
+        bgMusic.volume = 0.35;
+
+        musicToggle.addEventListener('click', function () {
+            if (bgMusic.paused) {
+                bgMusic.play().then(function () {
+                    musicToggle.classList.add('playing');
+                }).catch(function (e) {
+                    console.log('Music playback failed:', e);
+                });
+            } else {
+                bgMusic.pause();
+                musicToggle.classList.remove('playing');
+            }
+        });
+    }
+
 })();
