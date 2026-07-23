@@ -310,7 +310,7 @@ body {
     position: absolute;
     inset: 0;
     z-index: 0;
-    background: url('https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=1920&h=1080&fit=crop&q=85') center/cover no-repeat;
+    background: url('https://images.unsplash.com/photo-1636639818651-d97365346a5c?w=1920&h=1080&fit=crop&q=85') center/cover no-repeat;
     transform: scale(1.1);
     will-change: transform;
 }
